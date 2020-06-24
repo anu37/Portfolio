@@ -1,0 +1,752 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Anu Abraham</title>
+
+<!--Stylesheet-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+<link rel="icon" href="static/{{ aboutme.0.favicon }}" type="image/gif" sizes="16x16">
+<link href="static/css/font.css" rel="stylesheet" type="text/css">
+<link href="static/css/etlinefont.css" rel="stylesheet" type="text/css">
+<link href="static/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="static/css/base.css" rel="stylesheet" type="text/css">
+<link href="static/css/skeleton.css" rel="stylesheet" type="text/css">
+<link href="static/css/main.css" rel="stylesheet" type="text/css">
+<link href="static/css/magnific-popup.css" rel="stylesheet"  />
+<link href="static/css/flexslider.css" rel="stylesheet" />
+
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div id="loader">
+			<!-- Preloader inner -->
+	  <div id="loaderInner">
+	  	
+		<!-- Loader bars -->
+			<div class="loaderBars">
+				<span class="bar1 bar"></span>
+				<span class="bar2 bar"></span>
+				<span class="bar3 bar"></span>
+			</div>
+			<!-- End loader bars -->
+	
+	  </div>
+	<!-- End preloader inner -->
+	</div>
+	<!-- End preloader -->
+		
+	<!--Offset nav canvas-->
+	<aside class="offestNavCanvas ">
+		
+		
+		<!--Offset nav inner-->
+		<div class="offsetNavInner">
+		
+		
+		<!--Offset nav-->
+
+		<ul class="offsetNav">
+			
+			<li><a class="scroll" href="#home">Home</a></li>
+			<li><a class="scroll" href="#about">about</a></li>
+			<li><a class="scroll" href="#resume">resume</a></li>
+			<li><a class="scroll" href="#portfolio">Portfolio</a></li>
+			<li><a class="scroll" href="#blog">Blog</a></li>
+			<li><a class="scroll" href="#contact">Contact</a></li>
+
+		</ul>
+		
+		<!--End offset nav-->
+		
+		
+		<!--Offset nav socials-->
+		<ul class="offsetNavSocials">
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa fa-behance"></i></a></li>
+	</ul>
+	
+	<!--End offset nav socials-->
+	
+
+		</div>
+	<!--End offset nav inner-->
+	
+	
+	</aside>
+	<!--End offset nav canvas-->
+	
+	
+	
+	<!--Header-->
+	<header id="header" >
+		
+		<!--Main header-->
+			<div class="mainHeader default">
+				
+				
+				<!--Container-->
+			<div class="container clearfix">
+				
+				
+
+				
+			<div class="eight columns headerSocials tLeft">
+			
+			</div>
+			
+			
+				<div class="eight columns nav tRight">
+						<!--Main navigation-->
+							<nav class="mainNav" >
+
+							<ul>
+								<li><a href="static/{{ aboutme.0.resume }}" download>download my cv</a></li>
+							</ul>
+
+							</nav>
+						<!--End main navigation-->
+	
+				</div>
+			
+			</div>
+				<!--End container-->
+	
+			</div>
+				<!--End main header-->
+				
+				
+	</header>
+	<!--End header-->
+
+<!--Wrapper-->
+<div class="wrapper">
+	
+
+	<!--Profile teaser-->
+	<div class="profileTeaser">
+		
+		<!--teaser-->
+		<div class="teaser flexslider">
+			
+			<ul class="slides">
+				
+				<li><img src="static/{{ aboutme.0.cover_photo_1 }}" class="slide" alt=""/>
+						{% comment %} {% for skill in aboutme %} {% endcomment %}
+						<div class="caption">
+							<h1>{{ aboutme.0.name }}</h1>
+							<p>{{ aboutme.0.role }}</p>
+						{% comment %} {% endfor%} {% endcomment %}
+						</div>
+				</li>
+				
+				
+					<li><img src="static/{{ aboutme.0.cover_photo_2 }}" class="slide" alt=""/>
+							<div class="caption">
+								<h1>{{ aboutme.0.name }}</h1>
+								<p>{{ aboutme.0.role }}</p>
+
+							</div>
+					</li>
+					
+			</ul>
+
+		</div>
+		<!--End teaser-->
+	</div>
+	<!--End profile teaser-->
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--About section-->
+		<section id="about">
+			
+			
+			<!--Intro holder-->
+			<div class="introHolder bgGreenDark">
+
+			<div class="introBg bgGreen"></div>
+
+			<!--Container-->
+			<div class="container clearfix">
+				
+				
+				<!--Intro-->
+				<div class="eight columns intro">
+					
+					
+					<!--Intro-->
+					<div class="innerIntro">
+					
+						{% comment %} <div class="aboutTitle">
+								<h1>{{ aboutme.0.name }}<span>{{ aboutme.0.role }}</span></h1>
+						</div> {% endcomment %}
+						
+						
+						<div class="aboutIntro">
+
+						<p>{{ aboutme.0.about_yourself }}
+						</p>
+					</div>
+						
+							
+					</div>
+					<!--End inner intro-->
+				</div>
+				<!--End intro-->
+				
+				
+				
+				<!--About info-->
+				<div class="eight columns aboutInfo ">
+					
+					
+					<!--Inner info-->
+					<div class="innerInfo clearfix">
+					
+					<div class="aboutProfile">
+						<img src="static/{{ aboutme.0.profile_photo}}" alt=""/>
+					</div>
+					
+					<div class="aboutInfo">
+						<ul>
+						<li><span>Birth Date</span> : {{ aboutme.0.birth_date }}</li>
+						<li><span>Phone</span> : {{ aboutme.0.phone }}</li>
+						<li><span>Email</span> : {{ aboutme.0.email }}</li>
+						<li><span>Address</span> : {{ aboutme.0.address }}</li>
+						</ul>
+						<ul class="offsetNavSocials">
+						<li><a href={{ aboutme.0.github_link }}><i class="fa fa-github"></i></a></li>
+						<li><a href={{ aboutme.0.linkedin_link }}><i class="fa fa-linkedin"></i></a></li>
+						<li><a href={{ aboutme.0.facebook_link }}><i class="fa fa-facebook"></i></a></li>
+				</ul>
+{% comment %} 						
+						
+						<div class="ctl">
+							<a href="resume/Anu_Resume.pdf" class="btn" href="#" download >download my cv</a>
+						</div>
+						 {% endcomment %}
+						
+					</div>
+					
+					</div>
+					<!--End inner info-->
+				
+					
+				</div>
+				<!--End about info-->
+				
+				{</div>
+				<!--End container-->
+				
+				</div>
+			<!--End intro holder-->
+	
+	
+	</section>
+	<!--End about section-->
+	
+	
+	<!--Resume section-->
+	
+	<section id="resume" class="tCenter">
+		
+			<div class="tdarkHolder bgGreyDark ofsTMedium">
+			<!--Big title-->
+			<div class="bigTitle dark">										
+			<h1>my employment</h1>
+			{% comment %} <img alt="" src="images/starL.png"> {% endcomment %}
+			</div>
+			<!--End big title-->				
+			</div>
+			
+			
+				<!--Container-->
+				<div class="container clearfix">
+			
+			
+			<!--Resume details-->							
+					<div class="twelve columns resumeDetails margHTop margHBottom">
+					{% for job in jobs %}
+						<!--Employment-->
+						<div class="employment">
+							<div class="em clearfix">
+								<div class="dtIco">
+									<span class="ico"><i class="fa fa-suitcase"></i></span>
+								</div>
+								<div class="det">
+									<h3>{{ job.role }}<span> – {{ job.company_name }}</span> </h3>
+									<p>{{job.description|safe|linebreaks}}</p>
+									{% comment %} <p id="log"></p>
+										<script>
+											var $log = $( "#log" ),
+											str = '{{job.description|safe|linebreaks}}',
+											html = $.parseHTML(str),
+											nodeNames = [];
+											$log.append(html);
+										</script> {% endcomment %}
+										<div class="date">
+									<i class="fa fa-calendar-o"></i>
+										<span>{{ job.years_from }} - {{ job.years_to }}</span>
+									</div>
+								</div>
+							</div>
+							
+							</div>
+						{% endfor %}
+						</div>
+						<!--End employment-->
+					</div>
+					<!--End container-->
+					<div class="tdarkHolder bgGreyDark ofsTMedium">
+						<!--Big title-->
+						<div class="bigTitle dark">	
+						<h1>my education</h1>
+						{% comment %} <img alt="" src="images/star.png"> {% endcomment %}
+						</div>
+						<!--End big title-->				
+						</div>
+
+
+							<!--Container-->
+						<div class="container clearfix">
+
+
+						<!--Resume details-->							
+								<div class="twelve columns resumeDetails margHTop margHBottom">
+								{% comment %} <div class="clearfix">
+								<div class="c100 p12 small">
+								<span>12%</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
+							</div> {% endcomment %}
+
+								{% for edu in education %}
+									<!--Education-->
+									<div class="education">
+										<!--Ed-->
+										
+										<div class="ed clearfix">
+											<div class="dtIco">
+												<span class="ico"><i class="fa fa-graduation-cap"></i></span>
+											</div>
+
+											<div class="det">
+												<h3>{{ edu.course_name }}<span>– {{ edu.subject }}, {{edu.college}}</span> </h3>
+												<div class="date">
+												<i class="fa fa-calendar-o"></i>
+												<span>{{ edu.years_from }} - {{ edu.years_to }}</span>
+													
+												</div>
+											</div>
+											
+										</div>
+										
+									</div>
+									<!--End education-->
+									{% endfor %}
+									</div>
+								<!--End resume details-->
+
+								</div>
+								
+					<div class="tdarkHolder bgGreyDark ofsTMedium">
+						<!--Big title-->
+						<div class="bigTitle dark">
+					<h1>my skills and expertise</h1>
+					{% comment %} <img src="images/star.png" alt=""> {% endcomment %}
+					</div>
+					</div>
+						<!--End big title-->
+
+						<!--Container-->
+						
+					<div class="container clearfix">
+							
+							{% for category in categories %}
+							<div class="skillsContent  twelve columns   margHBottom tLeft">
+								
+								<!--Skill-->
+								
+								<div class="skill ofsInBottom">
+								
+									<div class="skillTitle ofsInBottom">
+									
+										<h1>{{ category.category}}</h1>
+									</div>
+									<!--End skill title-->
+									
+									{% for skill in skills %}
+									{% if skill.category == category %}
+									<!--Skill inner-->
+									<div class="skillInner">
+										<div class="skillBar">            
+										     <div class="skillbarHolder">
+										      <div class="skillbarTitle">{{ skill.skill_name }}</div>
+										      <div class="percentage graphic percent{{ skill.expert_percent }}"></div>    
+										      </div>              
+										</div>
+
+									</div>
+									{% endif %}
+									{% endfor %}
+										
+								</div>
+								{% endfor %}
+							</div>
+							
+								<div class="skill ofsInBottom">
+
+									<!--Skill title-->
+									<div class="skillTitle ofsBSmall">
+										<h1>personal skills</h1>
+									</div>
+									
+									<div class="skillInner">
+											<div class="personal ofsTSmall clearfix">	
+											{% for skill in personal_skill%}
+												<ul class="pList">
+												<li><i class="fa fa-arrow-circle-o-right"></i>{{skill.personal_skill}}</li>
+											</ul>
+											{% endfor %}
+											
+											</div>
+
+
+										</div>
+										<!--End skill inner-->
+									</div>
+										
+											<!--Skill-->
+											<div class="skill ofsBMedium">
+
+												<!--Skill title-->
+												<div class="skillTitle ofsBSmall">
+													<h1>language skills</h1>
+												</div>
+												<!--End skill title-->
+
+
+												<!--Skill inner-->
+												<div class="skillInner">
+													<ul class="langList clearfix">
+													{% for lang in languages %}
+															<li>
+															<h4>{{ lang.lang_name }}</h4>
+															<div class="rating">
+															{% load filter %}
+															{% for level in lang.expert_level|times %}
+																<span><i class="fa fa-star"></i></span>
+															{% endfor %}
+															{% for level in lang.expert_level|transtimes %}
+																<span class="transparent"><i class="fa fa-star"></i></span>
+															{% endfor %}
+															</div>
+														</li>
+													{% endfor %}
+
+													</ul>
+
+													</div>
+													<!--End skill inner-->
+
+
+											</div>
+											<!--End skill-->
+										</div>
+											
+											<!--Bet Buttons-->
+											<div class="getBtn">
+												
+												<div class="getCv">
+												<a href="static/{{ aboutme.0.resume }}" download><i class="fa fa-arrow-circle-o-down"></i>
+												<h3>Download My CV</h3>
+												</a>
+												</div>
+												
+												
+												
+											</div>
+											<!--End get buttons-->
+								
+								
+							</div>
+							<!--End skills content-->
+							
+							
+							
+						</div>
+						<!--End container-->
+					
+						
+						
+					</div>
+					<!--End skills-->	
+								
+								
+								
+
+	</section>
+	
+			<section id="blog" class=" blog tCenter ofsTop">
+
+
+
+					<div class="tdarkHolder bgGreyDark ofsTMedium">
+						<!--Big title-->
+						<div class="bigTitle dark">	
+						
+					<h1>latest blog posts</h1>
+					</div>
+					<!--End big title-->
+
+{% comment %} 						
+						
+						<!--Container-->
+						<div class="container clearfix"> {% endcomment %}
+
+
+						<!--Small intro-->
+						<div class="smallIntro margBottom">
+						</div>
+						<!--End small intro-->	
+
+							</div>
+							<!--End container-->
+						
+						<!--Blog inner-->
+						
+						<div class="blogInner offsetBottom clearfix">
+							
+							
+							<!--Post last-->
+							<div class="pstL clearfix bgGrey">
+								
+								<!--Container-->
+								<div class="container clearfix">
+									
+									
+									<!--Post last holder-->
+									<div class="twelve columns postLHolder">
+										<!--Post last inner-->
+									<div class="pstLInner ofsInTop ofsInBottom clearfix">	
+									{% for blog in blogs %}
+									<div class="pstlIco">
+									{% comment %} <img src={{ blog.image_path }} alt=""> {% endcomment %}
+									</div>
+									
+									{% comment %} <div class="pstlBlog"> {% endcomment %}
+									<div class="pstlDet">
+										<div class="postTitle">
+										
+										<h1><b>{{ blog.title }}<b></h1>
+										</div>
+										
+										<p>{{ blog.description }} [....]  </p>
+										<a class="blContinue" href={{ blog.link }}>continue reading...</a>
+									</div>
+									</div>
+									{% endfor %}
+										<!--End post last inner-->
+									</div>
+									<!--End post last holder-->
+
+								</div>
+								<!--End container-->
+							
+						</div>
+						
+				</section>
+				<!--End blog section-->
+				</section>
+						<!--End blog section-->
+		
+		
+		
+							<!--Contact section-->
+							<section id="contact" class=" contact  ofsTop margHBottom">
+
+
+
+
+									<!--Big title-->
+									<div class="bigTitle tCenter">	
+									<h1>get in touch with me</h1>
+									{% comment %} <img src="images/star.png" alt=""> {% endcomment %}
+									</div>
+									<!--End big title-->
+									
+									
+									
+									<!--Container-->
+									<div class="container clearfix">
+									
+									<div class="smallIntro margBottom tCenter">
+									<p>Have some projects ? or simply you wish to say hello, feel free to get in touch
+									</p>
+								</div>
+								
+								</div>
+								<!--End container-->
+									
+									
+									
+									<!--Contact inner-->
+									<div class="contactInner  clearfix">
+
+									<!--Container-->
+									<div class="container clearfix">
+
+										<div class="sixteen columns">
+
+											<!--Contact form-->
+											<div class="contactForm">
+												<form action="{% url 'job:mail' %}" method="post">
+												{% csrf_token %}
+
+													<!--Input columns-->
+													<div class="inputColumns clearfix">
+
+													<div class="column1">
+														<div class="columnInner">
+													<input type="text" name="name" id="name" value="" placeholder="Name *">
+													</div>
+													</div>
+
+													<!--Column-->
+													<div class="column2">
+														<div class="columnInner">
+													<input type="text" name="email" id="email" value="" placeholder="Email *">
+													</div>
+													</div>
+													<!--End column-->
+
+													</div>
+													<!--End input columns-->
+
+
+														<!--Input columns-->
+														<div class="inputColumns clearfix">
+
+														<div class="column1">
+															<div class="columnInner">
+														<input type="text" name="website" id="website" value="" placeholder="WebSite">
+														</div>
+														</div>
+
+														<!--Column-->
+														<div class="column2">
+															<div class="columnInner">
+														<input type="text" name="subject" id="subject" value="" placeholder="Subject ">
+														</div>
+														</div>
+														<!--End column-->
+
+														</div>
+														<!--End input columns-->
+
+														<textarea rows="10" cols="45" id="message" placeholder="Message *" name="message"></textarea>
+														<div id="submit" class="btn">Send Message</div>
+												</form>
+
+
+												<!--Contact form message-->
+												<div id="success"><h2>Your message has been sent. Thank you!</h2></div>
+												<div id="error"><h2>Your message has been sent. Thank you!</h2></div>
+												<!--End contact form message-->
+											</div>
+											<!--End contact form-->
+										</div>
+
+
+
+									
+
+										</div>
+										<!--End container-->
+
+										</div>
+										<!--End contact inner-->
+	
+							</section>
+
+					</div>
+						<!--End container-->
+					</div>
+						<!--End footer bottom-->
+				
+				<footer id="footer" class="footer tCenter">
+				<div class="footerTop ofsInTop ofsBMedium">
+										<!--Container-->
+										<div class="container clearfix">
+											
+												<!--Footer top inner-->
+												<div class="ftInner">
+												</div>
+										</div>
+
+
+				</div>
+				
+				</footer>
+					<!--End footer-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+<!--End wrapper-->
+
+	
+<!--Javascript-->
+<script src="static/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="static/js/jquery-migrate-1.2.1.js" type="text/javascript"></script>
+<script src="static/js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="static/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="static/js/jquery.smooth-scroll.js" type="text/javascript"></script>
+<script src="static/js/jquery.quicksand.js" type="text/javascript"></script>
+<script src="static/js/modernizr.custom.js" type="text/javascript"></script>
+<script src="static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script src="static/js/Placeholders.min.js" type="text/javascript"></script>
+<script src="static/js/script.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+<!-- Google analytics -->
+
+
+<!-- End google analytics -->
+
+
+</body>
+</html>
